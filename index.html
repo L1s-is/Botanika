@@ -13,15 +13,27 @@
 		<header class="header">
 			<nav class="nav">
 				<a class="main__logo" href="index.html" alt="Логотип сайта Ботаника">
-					<img class="logo__img" src="img/logo.svg" alt="Логотип сайта Ботаника - цветы в Санкт-Петербурге">
+					<img class="logo__img" src="img/logo.svg" alt="Логотип сайта Ботаника - цветы в Санкт-Петербурге" width="100px">
 				</a>
 				<ul class="nav__list">
-					<li class="nav__item"><a class="nav__link" href="#">Каталог</a></li> 
-					<li class="nav__item"><a class="nav__link" href="#">Доставка и оплата</a></li>
-					<li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>			
-					<li class="nav__item"><a class="nav__link" href="#">Спецпредложения</a></li>
-					<li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-					<li class="nav__item"><a class="nav__link" href="#">Корзина</a></li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Каталог</a>
+					</li> 
+					<li class="nav__item">
+						<a class="nav__link" href="#">Доставка и оплата</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Отзывы</a>
+					</li>			
+					<li class="nav__item">
+						<a class="nav__link" href="#">Спецпредложения</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Контакты</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Корзина</a>
+					</li>
 				</ul>						 
 			</nav> 			
 		</header>
@@ -37,8 +49,8 @@
 					<p class="main__desc">Оригинальные свежие букеты
 					с доставкой по всему городу</p>
 					<a href="#" class="btn main__link">Смотреть каталог</a>
-					<img src="img/main__bot.jpg" class="main__img main__img--bot" alt="Нежный букет из розовых тюльпанов в руках девушки">
-					<img src="img/main__top.jpg" class="main__img main__img--top" alt="Букет из розовых и белых роз в руках девушки ">		
+					<img src="img/main__bot.jpg" class="main__img main__img--bot" alt="Нежный букет из розовых тюльпанов в руках девушки" width="386px" height="404px">
+					<img src="img/main__top.jpg" class="main__img main__img--top" alt="Букет из розовых и белых роз в руках девушки" width="387px" height="420px">		
 				</section>
 
 				<section class="benefits">
@@ -77,7 +89,7 @@
 
 				<section class="slider">
 					<h2 class="slider__title">Популярные букеты</h2>			
-					<div class="slider__card">
+					<div class="slider__card slider__card--active">
 						<h3 class="slider__card_title">
 							Букет «Нежность»
 						</h3>
@@ -89,13 +101,15 @@
 						<p class="slider__card_price">3600 руб.</p>
 						<a href="#" class="btn">Заказать</a> 	
 
-						<img src="img/slider__photo.png" class="slider__card_photo" alt="Белый букет из роз в кружевном оформлении и белой лентой">
+						<img src="img/slider__photo.png" class="slider__card_photo" alt="Белый букет из роз в кружевном оформлении и белой лентой" width="387px" height="438px">
 					</div>				
 										
-					<button type="button" class="slider__btn">
+					<button type="button" class="slider__btn arrow__back">
+						<span class="arrow"></span>
 						<span class="visually-hidden">Назад</span>
 					</button>
-					<button type="button" class="slider__btn">
+					<button type="button" class="slider__btn arrow__forward">
+						<span class="arrow"></span>
 						<span class="visually-hidden">Вперед</span>
 					</button>
 				</section>
@@ -104,17 +118,19 @@
 					<h2 class="visually-hidden">Каталог букетов</h2>
 					<ul class="catalog__list">					
 						<li class="catalog__item">
-							<a href="#" class="catalog__item_link">
-								<h3 class="catalog__item_title">
-									Свадебные букеты
-								</h3>
-								<p class="catalog__item_desc">
-									Букеты для невест
-								</p>
+
+							<a href="#" class="catalog__item_link img__wedding">								
+									<h3 class="catalog__item_title">
+										Свадебные букеты
+									</h3>
+									<p class="catalog__item_desc">
+										Букеты для невест
+									</p>
+								
 							</a>
 						</li>
 						<li class="catalog__item">
-							<a href="#" class="catalog__item_link">
+							<a href="#" class="catalog__item_link img__pion">
 								<h3 class="catalog__item_title">
 									Букеты с пионами
 								</h3>
@@ -124,7 +140,7 @@
 							</a>
 						</li>	
 						<li class="catalog__item">
-							<a href="#" class="catalog__item_link">
+							<a href="#" class="catalog__item_link img__change">
 								<h3 class="catalog__item_title">
 									Выбрать букет
 								</h3>
@@ -138,7 +154,7 @@
 
 				<section class="discount">
 					<h2 class="discount__title">
-						Скидка 10%<br>
+						Скидка 10%
 						на первый заказ
 					</h2>
 					<p class="discount__desc">
@@ -148,7 +164,7 @@
 						«Botanika2021» и получите
 						скидку 10%.
 					</p>
-					<img src="img/discount_img.jpg" class="discount__img" alt="Цветочная композиция из роз, хризантем, пионов разных цветов с декотративной зеленью в крафт-бумаге">
+					<img src="img/discount_img.jpg" class="discount__img" alt="Цветочная композиция из роз, хризантем, пионов разных цветов с декотративной зеленью в крафт-бумаге" width="590px" height="391px">
 				</section>
 
 				<section class="steps">
@@ -223,9 +239,9 @@
 							</a>
 						</li>							
 					</ul>
-					<img src="img/news__img_bot_left.jpg" class="news__img news__img--top" alt="Букет из разных видов с праздничным оформлением в вазе">
-					<img src="img/news_img_top_left.jpg" class="news__img news__img--bot" alt="Букет из розовых роз с оформлением белыми гипсофилами и декотративной зеленью">
-					<img src="img/news__img_right.jpg" class="news__img news__img--right" alt="Букет из розовых хризантем с оформлением декотративной зеленью в крафт-бумаге">
+					<img src="img/news__img_bot_left.jpg" class="news__img news__img--top" alt="Букет из разных видов с праздничным оформлением в вазе" width="285px" height="220px">
+					<img src="img/news_img_top_left.jpg" class="news__img news__img--bot" alt="Букет из розовых роз с оформлением белыми гипсофилами и декотративной зеленью" width="285px" height="220px">
+					<img src="img/news__img_right.jpg" class="news__img news__img--right" alt="Букет из розовых хризантем с оформлением декотративной зеленью в крафт-бумаге" width="387px" height="460px">
 				</section>
 
 				<section class="reviews">
@@ -269,7 +285,7 @@
 			</div>
 
 			<section class="contacts">
-				<img src="img/map.jpg" class="map__img" alt="Офис Ботаники на карте по адресу: Санкт-Петербург, ул. Большая Конюшенная, 19">
+				<img src="img/map.jpg" class="map__img" alt="Офис Ботаники на карте по адресу: Санкт-Петербург, ул. Большая Конюшенная, 19" width="1440px" height="644px">
 				<div class="contacts__block">
 					<h3 class="contacts__title">
 						Мы ждем вас
@@ -289,16 +305,17 @@
 					</p>
 					<p class="contacts__subtitle">
 						Позвоните нам:
-					</p>
-					<p class="contacts__value">
-						+ 7 (812) 983-47-19
-					</p>
+					</p>					
+					<a class="contacts__value" href="tel:88129834719">
+					+ 7 (812) 983-47-19
+					</a>					
 					<p class="contacts__subtitle">
 						Напишите нам:
-					</p>
-					<p class="contacts__value">
-						info@botanika.ru
-					</p>
+					</p>					
+					<a class="contacts__value" href="mailto:info@botanika.ru">
+					info@botanika.ru
+					</a>
+					
 				</div>
 			</section>
 		</main>
