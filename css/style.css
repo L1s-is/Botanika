@@ -24,6 +24,8 @@ body{
 	min-width: 768px;
 	background-color: #ffffff;
 	margin: 0 auto;
+	font-size: inherit;
+
 }
 .header{
 	min-height: 90px;
@@ -62,19 +64,16 @@ body{
 .nav__item{
 	
 	margin: auto 0;
-	margin-right: 3%;	
+	margin-right: 2%;	
 }
-
+.nav__item:nth-of-type(3),
 .nav__item:nth-of-type(5),
 .nav__item:nth-of-type(6){
 	
-	margin-left:  3%;
+	margin-left:  2%;
 	margin-right: 0;	
 }
-.nav__item:nth-of-type(3){	
-	margin-left:  0;
-	margin-right: 0;	
-}
+
 .nav__item:nth-of-type(4){	
 	margin-left:  18%;
 	margin-right: 0;	
@@ -94,11 +93,13 @@ body{
 .content__main{
 	min-height: 544px;
 	margin-bottom: 48px;
+	display: flex;
+	justify-content: space-between;
 }
 .main__caption,
 .discount__title{
 	font-family: "Playfair Display", "Arial", sans-serif;
-	font-size: 44px;
+	font-size: 275%;
 	font-weight: 400;
 	line-height: 59px;
 	margin-bottom: 24px;
@@ -113,7 +114,7 @@ body{
 .main__desc{
 	width: 384px;
 	font-family: inherit;
-	font-size: 24px;
+	font-size: 150%;
 	font-weight: 400;
 	line-height: 29px;
 	margin-bottom: 64px;
@@ -136,12 +137,13 @@ body{
 }
 .main__img{	
 	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
 
 }
 .main__img--bot{
 	margin: 0;
 	margin-top: 140px;
-	margin-right: 20px;
 	width: 386px;
 	height: 404px;
 }
@@ -188,11 +190,16 @@ body{
 	margin-bottom: 80px;
 }
 .slider__title,
-.catalog__item_title{
+.catalog__item_title,
+.steps__title,
+.news__title,
+.reviews__title,
+.contacts__title{
 	font-family: "Playfair Display", "Arial", sans-serif;
-	font-size: 36px;
+	font-size: 225%;
 	font-weight: 700;
 	line-height: 48px;
+	margin: 0;
 	margin-bottom: 36px;
 }
 .slider__card_title,
@@ -305,37 +312,99 @@ body{
 }
 .discount{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 51% 49%;
 	box-sizing: border-box;
 	gap: auto;
 	min-height: 391px;
 	background-color: #AE7C78;
 	padding-top: 40px;
-	padding-left: 102px;
+	padding-left: 8.5%;
 	grid-template-areas: "title img"
 	"desc img";
 }
 .discount__title{
-	max-width: 488px;
+	max-width: 80%;
 	color: #ffffff;
+	padding: 0;
 	margin: 0;
 	margin-bottom: 24px;
 	grid-area: title;
 }
 .discount__desc{
-	font-size: 24px;
+	font-size: 150%;
 	line-height: 29px;
 	color: #ffffff;
-	max-width: 387px;
+	max-width: 80%;
 	margin: 0;
-margin-bottom: 64px;
-grid-area: desc;
+	padding: 0;
+	margin-bottom: 64px;
+	grid-area: desc;
+}
+.discount::after{
+	content: '';
+	grid-area: img;
+	margin-top: -40px;
+	max-width: 100%;
+	overflow: hidden;
+	background: url(../img/discount_img.jpg) no-repeat center;
 }
 .discount__img{
 	grid-area: img;
+	margin-top: -40px;
+	max-width: 100%;
+}
+.steps__list{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.steps__card--order::before{
+	content: url(../img/steps__1.svg);
+	display: block;
+	width: 82px;
+	height: 52px;
+	margin-right: 20px;
+}
+
+.steps__card--details::before{
+	content: url(../img/steps__2.svg);
+	display: block;
+	width: 34px;
+	height: 52px;	
+}
+.steps__card--payment::before{
+	content: url(../img/steps__3.svg);
+	display: block;
+	width: 59px;
+	height: 52px;
+}
+.steps__card--delivery::before{
+	content: url(../img/steps__4.svg);
+	display: block;
+	width: 59px;
+	height: 52px;
 }
 
 
+
+.map__img{
+	width: 100%;
+	height: auto;
+}
+.contacts__block{
+	width: 386px;
+	min-height: 520px;
+	background-color: #F7FAFC;
+	box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
+	border-radius: 12px;
+	padding: 0;
+	padding-top: 40px;
+	padding-left: 35px;
+}
+.contacts__value{
+	font-weight: 500;
+}
 
 @media screen and (max-width: 1280px) {
  	.logo__img{
@@ -344,15 +413,21 @@ grid-area: desc;
   	.nav__list{	
 		font-size: 90%;	
 	}
-	
+	.Botanika__wrapper{
+		font-size: 90%;	
+	}
 }
 @media screen and (max-width: 1024px) {
  
-  	.nav__list{	
+  .nav__list{	
 		font-size: 80%;	
 	}
+
 	.logo__img{
 	width: 80px;
+	}
+	.Botanika__wrapper{
+		font-size: 80%;	
 	}
 	.nav__item{			
 		margin-right: 2%;	
