@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Botanika</title>
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">			
 </head>
@@ -13,6 +14,10 @@
 		<header class="header">
 			<nav class="nav">
 				<a class="main__logo" href="index.html" alt="Логотип сайта Ботаника">
+					<svg class="logo__img">
+						<use xlink:href="img/sprite.svg#facebook">
+						</use>
+					</svg>
 					<img class="logo__img" src="img/logo.svg" alt="Логотип сайта Ботаника - цветы в Санкт-Петербурге" width="100px">
 				</a>
 				<ul class="nav__list">
@@ -225,33 +230,35 @@
 				</section>
 
 				<section class="news">
-					<h2 class="news__title">
-						Следите за нашими новостями
-					</h2>
-					<p class="news_desc">
-						Подписывайтесь на наши
-						соцсети и узнавайте
-						о новинках и акциях первым.
-					</p>
-					<ul class="social__list">
-						<li class="social__item">
-							<a class="social__link" href="#">
-								<span class="visually-hidden">Инстаграм</span>
-							</a>
-						</li> 
-						<li class="social__item">
-							<a class="social__link" href="#">
-								<span class="visually-hidden">Фейсбук</span>
-							</a>
-						</li>
-						<li class="social__item">
-							<a class="social__link" href="#">
-								<span class="visually-hidden">Твиттер</span>
-							</a>
-						</li>							
-					</ul>
-					<img src="img/news__img_bot_left.jpg" class="news__img news__img--top" alt="Букет из разных видов с праздничным оформлением в вазе" width="285px" height="220px">
-					<img src="img/news_img_top_left.jpg" class="news__img news__img--bot" alt="Букет из розовых роз с оформлением белыми гипсофилами и декотративной зеленью" width="285px" height="220px">
+					<div class="news__text">
+						<h2 class="news__title">
+							Следите за нашими новостями
+						</h2>
+						<p class="news_desc">
+							Подписывайтесь на наши
+							соцсети и узнавайте
+							о новинках и акциях первым.
+						</p>
+						<ul class="social__list">
+							<li class="social__item">
+								<a class="social__link" href="#">
+									<span class="visually-hidden">Инстаграм</span>
+								</a>
+							</li> 
+							<li class="social__item">
+								<a class="social__link" href="#">
+									<span class="visually-hidden">Фейсбук</span>
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#">
+									<span class="visually-hidden">Твиттер</span>
+								</a>
+							</li>							
+						</ul>
+					</div>
+					<img src="img/news__img_top.jpg" class="news__img news__img--top" alt="Букет из разных видов с праздничным оформлением в вазе" width="285px" height="220px">
+					<img src="img/news__img_bot.jpg" class="news__img news__img--bot" alt="Букет из розовых роз с оформлением белыми гипсофилами и декотративной зеленью" width="285px" height="220px">
 					<img src="img/news__img_right.jpg" class="news__img news__img--right" alt="Букет из розовых хризантем с оформлением декотративной зеленью в крафт-бумаге" width="387px" height="460px">
 				</section>
 
