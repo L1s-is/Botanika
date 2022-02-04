@@ -1218,20 +1218,22 @@ body {
 		flex-wrap: wrap;
 		position: relative;
 	}
-	.main__link{
+
+	.main__link {
 		position: absolute;
 		bottom: 0;
 		left: 15%;
 		max-width: 70%;
 	}
+
 	.main__caption,
-	.discount__title{
+	.discount__title {
 		line-height: 37px;
 		margin-bottom: 15px;
 	}
 
 	.main__img--bot,
-	.main__img--top{
+	.main__img--top {
 		display: inline-block;
 		margin-right: 0;
 		margin-top: 0;
@@ -1240,80 +1242,97 @@ body {
 		min-width: 35%;
 		overflow: hidden;
 	}
-	.main__img--bot{
+
+	.main__img--bot {
 		margin-top: 30px;
 	}
-	.main__img{
+
+	.main__img {
 		/*max-height: 250px;*/
 		min-height: auto;
 	}
+
 	.content__text {
 		min-width: 90%;
 		grid-area: text;
 		font-size: 80%;
 	}
-	.main__desc{
+
+	.main__desc {
 		margin-bottom: 0;
 	}
-	.benefits__list{
+
+	.benefits__list {
 		flex-direction: column;
 		align-items: center;
 		gap: 30px;
 	}
-	.slider{
+
+	.slider {
 		min-width: 100%;
 		width: 100%;
 
 	}
-	.slider__card{
+
+	.slider__card {
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
 	}
-	.slider__card_photo{
+
+	.slider__card_photo {
 		max-width: 387px;
 		width: 100%;
 		height: auto;
 	}
-	.slider__card_text{
+
+	.slider__card_text {
 		text-align: center;
 		font-size: 90%;
 	}
-	.btn{
+
+	.btn {
 		margin: 0 auto;
 		width: 70%;
 		min-height: 45px;
 		font-size: 130%;
 		padding: 25px 10px;
 	}
+
 	.slider__title,
 	.slider__card_title,
 	.slider__card_desc,
 	.slider__card_btn,
 	.slider__card_size,
-	.slider__card_price{
+	.slider__card_price {
 		margin-bottom: 15px;
 	}
-	.slider__card_size{
+
+	.slider__card_size {
 		display: none;
 	}
-	.catalog__item{
+
+	.catalog__item {
 		min-width: 380px;
 	}
-	.discount{
+
+	.discount {
 		display: flex;
 		flex-direction: column;
 		padding: 35px;
 	}
-	.discount__desc{
+
+	.discount__desc {
 		width: 100%;
 		max-width: 100%;
 	}
+
 	.discount__title,
-	.discount__desc{
+	.discount__desc {
 		margin-bottom: 20px;
 	}
-	.discount__desc{
+
+	.discount__desc {
 		margin-bottom: 60px;
 	}
 
@@ -1324,16 +1343,19 @@ body {
 		max-width: calc(100% + 70px);
 		background: url(../img/discount_img.jpg) no-repeat center;
 	}
-	.news{
+
+	.news {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 	}
-	.news__text{
+
+	.news__text {
 		width: 100%;
 		max-width: 100%;
 	}
+
 	.news__img--top,
 	.news__img--bot {
 		display: inline-block;
@@ -1343,17 +1365,21 @@ body {
 		min-width: 40%;
 		margin: 0;
 	}
-	.news__img--right{
+
+	.news__img--right {
 		display: none;
 	}
+
 	.news__title,
 	.news_desc,
-	.social__list{
+	.social__list {
 		margin-bottom: 20px;
 	}
+
 	.contacts__block {
 		display: none;
 	}
+
 	.reviews,
 	.news,
 	.steps,
@@ -1361,50 +1387,61 @@ body {
 	.catalog,
 	.slider,
 	.benefits,
-	.content__main{
+	.content__main {
 		margin-bottom: 50px;
 	}
 }
-@media (max-width: 560px){
-	.nav__list{
+
+@media (max-width: 560px) {
+	.nav__list {
 		width: 100%;
 	}
-	.content__text{
+
+	.content__text {
 		text-align: center;
 	}
-	.main__img{
+
+	.main__img {
 		margin-bottom: 90px;
 	}
-	.main__img--bot{
+
+	.main__img--bot {
 		display: none;
 		width: 100%;
 	}
-	.main__img--top{
+
+	.main__img--top {
 		width: 90%;
 		max-width: 387px;
 		max-height: 350px;
 	}
-	.btn{
+
+	.btn {
 		min-width: 80%;
 		left: 10%;
 	}
+
 	.catalog__item {
 		width: 100%;
 		min-width: 280px;
 	}
-	.news__text{
+
+	.news__text {
 		text-align: center;
 	}
-	.news .social__list{
+
+	.news .social__list {
 		margin: 20px;
 		margin-left: auto;
 
 	}
+
 	.news__img--top,
 	.news__img--bot {
 		display: none;
 	}
-	.news__img--right{
+
+	.news__img--right {
 		display: block;
 		max-width: 387px;
 		width: 100%;
@@ -1413,22 +1450,27 @@ body {
 		border-radius: 10px;
 	}
 }
+
 @media (max-width: 420px) {
-	.main__img--top{
+	.main__img--top {
 		width: 100%;
 		max-width: 387px;
 		max-height: 350px;
 	}
-	.btn{
+
+	.btn {
 		min-width: 100%;
 		left: 0;
 	}
+
 	.steps__card {
 		width: 100%;
 	}
+
 	.reviews {
 		padding: 20px;
 	}
+
 	.reviews__card {
 		width: 100%;
 	}
