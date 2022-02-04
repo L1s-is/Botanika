@@ -29,7 +29,7 @@ body {
 
 .Botanika__wrapper {
 	max-width: 1440px;
-	min-width: 768px;
+	min-width: 320px;
 	background-color: #ffffff;
 	margin: 0 auto;
 	font-size: inherit;
@@ -193,7 +193,7 @@ body {
 	text-align: center;
 	background-color: #D89999;
 	width: 285px;
-	height: 80px;
+	min-height: 80px;
 	border-radius: 40px;
 	text-decoration: none;
 	transition: all 0.5s ease-in-out;
@@ -728,10 +728,11 @@ body {
 
 .contacts__block {
 	position: absolute;
+	z-index: 2;
 	top: 52px;
 	left: 122px;
 	width: 386px;
-	background-color: #F7FAFC;
+	background-color: rgba(247, 250, 252, 0.8);
 	box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
 	border-radius: 12px;
 	padding-top: 40px;
@@ -1108,6 +1109,7 @@ body {
 	.nav__list {
 		display: block;
 		position: fixed;
+		z-index: 5;
 		visibility: hidden;
 		top: 0;
 		right: -100%;
@@ -1181,7 +1183,7 @@ body {
 		height: 26px;
 
 		cursor: pointer;
-		z-index: 1;
+		z-index: 6;
 	}
 
 	.menu__btn > span,
@@ -1209,28 +1211,225 @@ body {
 	}
 }
 
-/*
 @media (max-width: 750px) {
 	.content__main {
+		margin-top: 15px;
 		gap: 10px;
 		flex-wrap: wrap;
+		position: relative;
 	}
+	.main__link{
+		position: absolute;
+		bottom: 0;
+		left: 15%;
+		max-width: 70%;
+	}
+	.main__caption,
+	.discount__title{
+		line-height: 37px;
+		margin-bottom: 15px;
+	}
+
 	.main__img--bot,
 	.main__img--top{
 		display: inline-block;
 		margin-right: 0;
-		margin-top: 20px;
+		margin-top: 0;
+		margin-bottom: 85px;
 		max-width: 45%;
 		min-width: 35%;
-		max-height: 200px;
 		overflow: hidden;
+	}
+	.main__img--bot{
+		margin-top: 30px;
+	}
+	.main__img{
+		/*max-height: 250px;*/
+		min-height: auto;
 	}
 	.content__text {
 		min-width: 90%;
 		grid-area: text;
+		font-size: 80%;
 	}
 	.main__desc{
+		margin-bottom: 0;
+	}
+	.benefits__list{
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
+	.slider{
+		min-width: 100%;
+		width: 100%;
+
+	}
+	.slider__card{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.slider__card_photo{
+		max-width: 387px;
+		width: 100%;
+		height: auto;
+	}
+	.slider__card_text{
+		text-align: center;
+		font-size: 90%;
+	}
+	.btn{
+		margin: 0 auto;
+		width: 70%;
+		min-height: 45px;
+		font-size: 130%;
+		padding: 25px 10px;
+	}
+	.slider__title,
+	.slider__card_title,
+	.slider__card_desc,
+	.slider__card_btn,
+	.slider__card_size,
+	.slider__card_price{
+		margin-bottom: 15px;
+	}
+	.slider__card_size{
+		display: none;
+	}
+	.catalog__item{
+		min-width: 380px;
+	}
+	.discount{
+		display: flex;
+		flex-direction: column;
+		padding: 35px;
+	}
+	.discount__desc{
+		width: 100%;
+		max-width: 100%;
+	}
+	.discount__title,
+	.discount__desc{
 		margin-bottom: 20px;
 	}
+	.discount__desc{
+		margin-bottom: 60px;
+	}
 
-}*/
+	.discount::after {
+		margin: -35px;
+		min-height: 280px;
+		height: 280px;
+		max-width: calc(100% + 70px);
+		background: url(../img/discount_img.jpg) no-repeat center;
+	}
+	.news{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.news__text{
+		width: 100%;
+		max-width: 100%;
+	}
+	.news__img--top,
+	.news__img--bot {
+		display: inline-block;
+		max-width: 295px;
+		width: 47%;
+		height: auto;
+		min-width: 40%;
+		margin: 0;
+	}
+	.news__img--right{
+		display: none;
+	}
+	.news__title,
+	.news_desc,
+	.social__list{
+		margin-bottom: 20px;
+	}
+	.contacts__block {
+		display: none;
+	}
+	.reviews,
+	.news,
+	.steps,
+	.discount,
+	.catalog,
+	.slider,
+	.benefits,
+	.content__main{
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 560px){
+	.nav__list{
+		width: 100%;
+	}
+	.content__text{
+		text-align: center;
+	}
+	.main__img{
+		margin-bottom: 90px;
+	}
+	.main__img--bot{
+		display: none;
+		width: 100%;
+	}
+	.main__img--top{
+		width: 90%;
+		max-width: 387px;
+		max-height: 350px;
+	}
+	.btn{
+		min-width: 80%;
+		left: 10%;
+	}
+	.catalog__item {
+		width: 100%;
+		min-width: 280px;
+	}
+	.news__text{
+		text-align: center;
+	}
+	.news .social__list{
+		margin: 20px;
+		margin-left: auto;
+
+	}
+	.news__img--top,
+	.news__img--bot {
+		display: none;
+	}
+	.news__img--right{
+		display: block;
+		max-width: 387px;
+		width: 100%;
+		margin: 0 auto;
+		height: auto;
+		border-radius: 10px;
+	}
+}
+@media (max-width: 420px) {
+	.main__img--top{
+		width: 100%;
+		max-width: 387px;
+		max-height: 350px;
+	}
+	.btn{
+		min-width: 100%;
+		left: 0;
+	}
+	.steps__card {
+		width: 100%;
+	}
+	.reviews {
+		padding: 20px;
+	}
+	.reviews__card {
+		width: 100%;
+	}
+}
